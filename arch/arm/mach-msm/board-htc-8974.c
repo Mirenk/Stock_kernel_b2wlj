@@ -123,7 +123,7 @@ static struct persistent_ram htc_8974_persistent_ram = {
 };
 
 #ifdef CONFIG_KEXEC_HARDBOOT
-#define HTC_8974_HARDBOOT_PHYS (HTC_8974_PERSISTENT_RAM_PHYS - SZ_1M)
+#define HTC_8974_HARDBOOT_PHYS (HTC_8974_PERSISTENT_RAM_PHYS + SZ_1M)
 #define HTC_8974_HARDBOOT_SIZE SZ_1M
 #endif
 
